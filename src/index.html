@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,8 +44,8 @@
               <ul class="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    class="text-slate-100 transition hover:text-slate-200/75"
-                    href="#"
+                    class="text-slate-100 hover:text-slate-200/75 transition"
+                    href="#aboutMe"
                   >
                     About me</a
                   >
@@ -112,7 +112,7 @@
             />
             <!-- Hamburger icon -->
             <div
-              class="relative z-50 block h-[1px] w-5 bg-slate-600 bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-slate-600 before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-slate-600 after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+              class="relative z-50 block h-[1px] w-5 bg-slate-600 content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-slate-600 before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-slate-600 after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
             ></div>
             <!-- Full-screen background with a backdrop blur filter -->
             <div
@@ -168,10 +168,36 @@
         </div>
       </div>
     </header>
-
-    <div>
-      <h1 id="aboutMe" class="my-96 text-center font-extrabold">About me</h1>
+    <!--Main elements: All sections-->
+    <div class="py-5 px-3 md:px-5">
+      <!-- About me section-->
+      <div class="flex flex-wrap sm:flex-nowrap justify-center gap-3 md:gap-5">
+        <!-- Image-->
+        <div class="max-w-56 md:max-w-72 border-2 border-slate-900 rounded">
+          <img src="../img/cv_img.jpg" alt="CV Image" class="max-w-full" />
+        </div>
+        <!-- Text-->
+        <div class="">
+          <h1
+            id="aboutMe"
+            class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 text-center sm:text-left"
+          >
+            Olexiy Babenko
+          </h1>
+          <h1
+            id="aboutMe"
+            class="text-xl md:text-2xl font-bold text-gray-700 text-center sm:text-left"
+          >
+            IT Project Manager
+          </h1>
+          <p class="text-wrap text-justify pt-3">
+            I'm an IT Project with 3 years of practical experience in running
+            waterfall, iteration, agile and scrum projects gained in Citi
+          </p>
+        </div>
+      </div>
     </div>
+
     <!-- Import JS file -->
     <script type="module" src="./script.js"></script>
   </body>

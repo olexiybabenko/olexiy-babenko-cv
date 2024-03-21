@@ -667,6 +667,10 @@ video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -683,16 +687,16 @@ video {
   width: 1.25rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-56 {
@@ -705,6 +709,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .translate-x-full {
@@ -760,6 +768,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -775,6 +787,11 @@ video {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -840,6 +857,20 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.fill-slate-100 {
+  fill: #f1f5f9;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -894,6 +925,14 @@ video {
   padding-top: 2rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -925,16 +964,12 @@ video {
   font-weight: 800;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-light {
   font-weight: 300;
 }
 
-.font-extralight {
-  font-weight: 200;
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -964,6 +999,11 @@ video {
 .text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -1184,12 +1224,26 @@ video {
     flex-wrap: nowrap;
   }
 
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
   .sm\:gap-11 {
     gap: 2.75rem;
   }
 
   .sm\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .sm\:gap-x-11 {
+    -moz-column-gap: 2.75rem;
+         column-gap: 2.75rem;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .sm\:px-5 {
@@ -1246,9 +1300,27 @@ video {
     gap: 1.75rem;
   }
 
+  .md\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
   .md\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .md\:text-2xl {
